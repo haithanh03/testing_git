@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        Nhap mang
+        <input type="input" id="in">
+    </div>
+    <div>
+        mang sap xep
+        <input type="input" id="out">
+    </div>
+    <button onclick="MyFunction()">RUN</button>
+    <script>
+        function MyFunction(){
+           let a = []
+           a = document.getElementById('in').value;
+           a.sort();
+           document.getElementById('out').value = a;
+           
+           
+        }
+    </script>
+</body>
+</html>

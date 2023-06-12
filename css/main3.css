@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 90px;
+}
+
+.hang1{
+    display: flex;
+}
+
+.title{
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    background-color: red;
+    padding: 15px;
+    font-size: 25px;
+}
+
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    
+}
+
+.menu ul li{
+    border: 1px solid black;
+    width: 100%;
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.menu ul li a:hover{
+    color: white;
+}
+
+.menu ul li:hover > .submenu{
+    display: block;
+}
+
+.submenu{
+    padding-top:10px;
+    width: 200px;
+    padding-left: 100px;
+}
+
+.menu ul li > .submenu{
+    position: absolute;
+    display: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    display: block;
+}
+
+.tusach p{
+    font-size: 30px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.tusach ul{
+    padding-left: 20px;
+}
+
+.mau{
+    display: flex;
+}
+
+.noidung{
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.center{
+    padding-top:30px;
+    margin: 20px 50px;
+
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.res{
+    display: flex;
+}
+
+.res p{
+    padding:5px;
+}
+
+.Hangmuc1{
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.tieude1{
+    border-bottom: 1px solid black;
+    background-color: aqua;
+}
+
+.Hangmuc2{
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.tieude2{
+    border-bottom: 1px solid black;
+}
+
+.noidung2{
+    background-color: aqua;
+}
+
+.footer{
+    text-align: center;
+    background-color: red;
+    color:white;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+

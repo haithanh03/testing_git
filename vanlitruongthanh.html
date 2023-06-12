@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ket thuc hoc phan</title>
+  <link rel="stylesheet" href="./main2.css">
+</head>
+<body>
+  <div>Nhap so thu nhat
+    <input type="text" name="" id="in1">
+  </div>
+  <div>nhap so thu hai
+    <input type="text" name="" id="in2">
+  </div>
+  <div>Boi chung nho nhat cua hai so la
+    <input type="text" id="out">
+  </div>
+  <button onclick="MyF()"></button>
+  <script>
+    function MyF(){
+      let a = document.getElementById('in1').value;
+      let b = document.getElementById('in2').value;
+      let a1 = a, b1 = b;
+      let tmp;
+      let ans;
+      while(b != 0){
+        tmp = a % b;
+        a = b; 
+        b = tmp;
+      }
+      if(a != 1) ans = Math.max(a1,b1);
+      else ans = a1*b1*a;
+      document.getElementById('out').value = ans;
+    }
+   
+  </script>
+</body>
+</html>

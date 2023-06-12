@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main2.css">
+    
+</head>
+
+<body>
+    <p id="title">TÍNH TIỀN ĐIỆN</p>
+    <div class="main">
+        <div class="noidung">
+            <p>Số cũ:</p>
+            <p>Số mới:</p>
+            <p>Giá điện:</p>
+            <p>Tiền điện:</p>
+            <p>Điện dùng cho:</p>
+        </div>
+        <div class="Tinh">
+            <input type="text" id="sc"> <br>
+            <input type="text" id="sm"> <br>
+            <input type="text" id="gia"> <br>
+            <input type="text" id="tien"> <br>
+            <input type="text" id="loai"> <br>
+        </div>
+    </div>
+    <button onclick="Myfunction()">Tính</button>
+
+    <script>
+        function Myfunction(){
+            var sc = document.getElementById('sc').value;
+            var sm = document.getElementById('sm').value;
+            var gia = document.getElementById('gia').value;
+            var tien = (parseInt(sm) - parseInt(sc)) * parseInt(gia);
+            document.getElementById('tien').value = tien;
+            if(tien > 1000) document.getElementById('loai').value = 'Kinh doanh';
+            else document.getElementById('loai').value = 'Gia Dinh';
+        }
+    </script>
+
+</body>
+
+</html>

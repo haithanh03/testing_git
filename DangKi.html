@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Project Name</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  TÍNH TIỀN ĐIỆN
+  <div class="main">
+    <div class="cot1">
+      <p>Số cũ:</p>
+      <p>Số mới:</p>
+      <p>Gia điện:</p>
+      <p>Tiền điện:</p>
+      <p>Điện dùng cho:</p>
+    </div>
+    <div class="cot2">
+      <input type="text" id="Socu">
+      <input type="text" id="Somoi">
+      <input type="text" id="Gia">
+      <input type="text" id="Tien">
+      <input type="text" id="Dungcho">
+    </div>
+  </div>
+  <button onclick="Myfunction()">Tinh</button>
+  <script>
+    function Myfunction(){
+      var n1 = document.getElementById('Socu').value;
+      var n2 = document.getElementById('Somoi').value;
+      var gia = document.getElementById('Gia').value;
+      var ans = 0;
+      ans = (parseInt(n2) - parseInt(n1)) * parseInt(gia);
+      document.getElementById('Tien').value = ans;
+      if(ans > 1000) document.getElementById('Dungcho').value = 'Kinh Doanh';
+      else document.getElementById('Dungcho').value = 'Gia Dinh';    }
+  </script>
+
+   
+    
+</body>
+</html>
